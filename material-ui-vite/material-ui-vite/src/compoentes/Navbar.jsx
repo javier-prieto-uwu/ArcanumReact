@@ -17,11 +17,11 @@ const Navbar2 = () => {
 
           <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll >
 
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/Contact">Contact</Nav.Link>
-            <Nav.Link as={Link} to="/AboutUs">About Us</Nav.Link>
-            <Nav.Link as={Link} to="/Login">Log In</Nav.Link>
-            <Nav.Link as={Link} to="/Register">Register</Nav.Link>
+            <Nav.Link id='intento' as={Link} to="/">Home</Nav.Link>
+            <Nav.Link id='intento' as={Link} to="/Contact">Contact</Nav.Link>
+            <Nav.Link id='intento' as={Link} to="/AboutUs">About Us</Nav.Link>
+            <Nav.Link id='intento' as={Link} to="/Login">Log In</Nav.Link>
+            <Nav.Link id='intento' as={Link} to="/Register">Register</Nav.Link>
 
           </Nav>
         </Navbar.Collapse>

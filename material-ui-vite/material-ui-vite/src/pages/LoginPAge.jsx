@@ -54,6 +54,7 @@ const LoginPAge = () => {
       navigate("/inicio");
     } catch (error) {
       console.error("Error en la autenticación:", error.message);
+      
     }
   };
 
@@ -104,6 +105,7 @@ const LoginPAge = () => {
   </Col>
 </Form.Group>
     
+
     <h6>¿No tienes una cuenta?  <Link to="/Register">Regístrate</Link>  </h6> 
 
     </Form>
