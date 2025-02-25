@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import '../pages/LoginPAge.css'
 
-
+import { Link } from "react-router-dom";
 //imports para el la creacion de usuario
 import appFirebase from '../Credenciales'
 import {getAuth, signInWithEmailAndPassword} from 'firebase/auth'
@@ -62,7 +62,7 @@ const LoginPAge = () => {
 
 
 <div>LoginPAge</div>
-    <Container fluid="md" className="d-flex justify-content-center align-items-center align-middle"> 
+    <Container fluid="md" id='espacio' className="d-flex justify-content-center align-items-center align-middle"> 
 
     
 
@@ -93,7 +93,7 @@ const LoginPAge = () => {
       <Form.Group as={Row} className="mb-3">
   <Form.Label column sm="1"></Form.Label> {/* Espacio para alinear */}
   <Col sm="10">
-  <Button id="" className="w-100" onClick={Autenticacion}>Inicia Sesion</Button>
+  <Button id="" className="w-100" onClick={Autenticacion}>Inicia Sesión</Button>
   </Col>
 </Form.Group>
 
@@ -103,8 +103,8 @@ const LoginPAge = () => {
     <Button id="colorboton" className="w-100">Inicia sesión con Google</Button>
   </Col>
 </Form.Group>
-
-
+    
+    <h6>¿No tienes una cuenta?  <Link to="/Register">Regístrate</Link>  </h6> 
 
     </Form>
 

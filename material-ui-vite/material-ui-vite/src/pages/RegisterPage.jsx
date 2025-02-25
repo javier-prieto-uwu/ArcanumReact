@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 import { useNavigate } from "react-router-dom";
 import '../pages/LoginPAge.css'
+import { Link } from 'react-router-dom';
 
 //imports para el la creacion de usuario
 import appFirebase from '../Credenciales'
@@ -40,7 +41,7 @@ const RegisterPage = () => {
 
 
 <div>LoginPAge</div>
-    <Container fluid="md" className="d-flex justify-content-center align-items-center align-middle"> 
+    <Container fluid="md" id='espacio' className="d-flex justify-content-center align-items-center align-middle"> 
 
     
 
@@ -81,6 +82,9 @@ const RegisterPage = () => {
     <Button id="colorboton" className="w-100">Registrate con Google</Button>
   </Col>
 </Form.Group>
+
+
+  <h6>¿Ya tienes una cuenta?  <Link to="/Login">Inicia Sesión</Link>  </h6> 
 
     </Form>
 
